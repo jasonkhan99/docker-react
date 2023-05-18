@@ -5,6 +5,6 @@ WORKDIR '/app'
 COPY package.json .
 RUN npm install
 
-# COPY . . (Not strictly necessary when referencing using volumes)
+COPY . .
 
 CMD ["npm", "run", "start"]
